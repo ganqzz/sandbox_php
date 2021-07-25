@@ -1,0 +1,13 @@
+/.idea/
+/.vscode/
+/tmp/
+/_orz/
+/out/
+output/
+db.sqlite3
+*.db
+*.log
+.env
+
+!.keep
+!.gitkeep

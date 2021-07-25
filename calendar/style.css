@@ -1,0 +1,29 @@
+table {
+  border: hidden;
+  border-collapse: collapse;
+}
+th, td {
+  border-style: hidden;
+  text-align: center;
+}
+th {
+  padding: 5px;
+  background: #eee;
+}
+input[type=checkbox] {
+  display: none;
+}
+label {
+  display: block;
+  padding: 5px;
+}
+
+input[type=checkbox]  + label { background: white; }
+
+input[type=checkbox]:checked  + label { background-color: #93E7FF; }
+.youbi_0 {
+  color: red;
+}
+.youbi_6 {
+  color: blue;
+}

@@ -1,0 +1,4 @@
+RewriteEngine On
+# To avoid overriding alias, RewriteBase is necessary.
+RewriteBase /home/sandbox_php/
+RewriteRule ^(.+)\.html$ $1.php [R=301,QSA,L]

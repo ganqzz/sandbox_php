@@ -1,0 +1,26 @@
+<?php
+
+header('Content-Type: text/plain');
+
+echo "# Server details:" . PHP_EOL;
+echo "SERVER_NAME: " . $_SERVER['SERVER_NAME'] . PHP_EOL;
+echo "SERVER_ADDR: " . $_SERVER['SERVER_ADDR'] . PHP_EOL;
+echo "SERVER_PORT: " . $_SERVER['SERVER_PORT'] . PHP_EOL;
+echo "DOCUMENT_ROOT: " . $_SERVER['DOCUMENT_ROOT'] . PHP_EOL;
+echo PHP_EOL;
+
+echo "# Page details:" . PHP_EOL;
+echo "PHP_SELF: " . $_SERVER['PHP_SELF'] . PHP_EOL;
+echo "SCRIPT_FILENAME: " . $_SERVER['SCRIPT_FILENAME'] . PHP_EOL;
+echo PHP_EOL;
+
+echo "# Request details:" . PHP_EOL;
+echo "REMOTE_ADDR: " . $_SERVER['REMOTE_ADDR'] . PHP_EOL;
+echo "REMOTE_PORT: " . $_SERVER['REMOTE_PORT'] . PHP_EOL;
+echo "SCRIPT_NAME: " . $_SERVER['SCRIPT_NAME'] . PHP_EOL;
+echo "REQUEST_URI: " . $_SERVER['REQUEST_URI'] . PHP_EOL;
+echo "QUERY_STRING: " . $_SERVER['QUERY_STRING'] . PHP_EOL;
+echo "REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD'] . PHP_EOL;
+echo "REQUEST_TIME: " . $_SERVER['REQUEST_TIME'] . PHP_EOL;
+echo "HTTP_REFERER: " . $_SERVER['HTTP_REFERER'] . PHP_EOL;
+echo "HTTP_USER_AGENT: " . $_SERVER['HTTP_USER_AGENT'] . PHP_EOL;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JSON with PHP</title>
+</head>
+<body>
+
+  <form action="ajax_json_add.php" method="post" id="add">
+    <input type="text" name="first"> +
+    <input type="text" name="second">
+    <input type="submit" name="add" value="Work this out">
+  </form>
+
+  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $('#add').on('submit', function() {
+      var that = $(this),
+        contents = that.serialize();
+
+      $.ajax({
+        url: 'ajax_json_add.php',
+        dataType: 'json',
+        type: 'post',
+        data: contents,
+        success: function(data) {
+          if (data.success) {
+            alert('The result is ' + data.result);
+          }
+        }
+      });
+
+      return false;
+    });
+  </script>
+</body>
+</html>

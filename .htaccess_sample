@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteBase /rewrite/handp/
+
+#RewriteRule ^(arrangements|flowers)$ $1.php [NC,L]
+RewriteRule ^flowers/([-\w]+)$ flowers?flower=$1 [NC,L]
+RewriteRule ^care/orchids(/\w+)?$ orchids.php [NC,L]
+#RewriteRule ^care/orchids/(\w+)$ "orchids.php#$1" [NC,NE,R]
+#RewriteRule ^details/(\d+)$ details.php?arrangement_id=$1 [NC,L]
+#RewriteRule ^details/([-\w]+)$ details.php?arrangement_id=${handp:$1} [L]
+RewriteRule ^details/([-\w]+)$ details.php?arrangement_id=${dbmhandp:$1} [L]
+RewriteRule ^search/([-\w]+)$ results.php?searchterm=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.+) $1.php [NC,L]
