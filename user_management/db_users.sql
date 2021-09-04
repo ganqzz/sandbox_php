@@ -2,10 +2,10 @@
 -- db.sqlite3
 
 CREATE TABLE users (
-    id integer NOT NULL PRIMARY KEY AUTOINCREMENT,
-    name text,
-    email text UNIQUE,
-    password text,
-    created,
-    modified
+    id INTEGER PRIMARY KEY,
+    name TEXT UNIQUE NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    created TEXT,
+    modified TEXT
 );

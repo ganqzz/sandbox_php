@@ -1,4 +1,4 @@
 
-- ������
-- �ڐA����nodejs�Ƃ͈Ⴂ�APHP�͂��̂܂܂ł̓��N�G�X�g���ׂ��Ȃ��B
-- DELETE, PUT�̈���
+- 未完成
+- 移植元のnodejsとは違い、PHPはそのままではリクエストを跨げない。
+- DELETE, PUTの扱い
